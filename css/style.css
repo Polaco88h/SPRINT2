@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;   
+    background:linear-gradient(to right, #1f2cdd,#148ed4, #45c9f1);
+}
+.nav-item{
+    margin: 10px;
+    padding: 5px 50px;
+    border: 2px solid #ff5b00;
+    
+}
+.nav-item:hover{
+    background: linear-gradient(to right,#3374d6, #19c1df);
+    transform: scale(1.1);
+}
+.nuestros .titulo{
+    font-size: 25px;
+    color: #fff;
+    padding-left:30px ;
+}
+.nuestros{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.nuestros a{
+    margin-left: 90px;
+    font-size: 40px; 
+    color: #fff;
+}
+.nuestros a:hover{
+    transform: scale(2.3);
+    color: #ff5b00;
+}    
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+}
+
+.card img{
+    height: auto;
+    width: auto;
+}
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*grid-template-rows: 100px 33px 120px auto;*/   
+}
+
+.card{
+    border: 2px solid black;
+    width: 350px;
+    height: 380px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.mapas{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.contactos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactos input{
+    display: flex;
+    padding: 0 40px;
+    margin-top: 9px;
+}
+.contactos .btn{
+   padding-left: 2px;
+}
+@media screen and (max-width: 768px){
+    
+    body{
+        font-size: 16px;    
+    }
+    .cards{
+      display:grid;
+      grid-template-columns: auto;
+    }
+    .mapas{
+        display: block;
+        width: 80vh;
+       
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+@media screen and (max-width: 1024px){
+    
+    body{
+        font-size: 20px;    
+    }
+    .cards{
+      display:grid;
+      grid-template-columns: auto;
+    }
+    .mapas{
+        display: block;
+       width: 80vw;
+       padding-right: 10px;
+       
+    }
+}
